@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="player_a_label">Player A</string>
+    <string name="player_a_points">0</string>
+    <string name="player_a_ace_label">Ace</string>
+    <string name="player_a_aces">0</string>
+    <string name="player_a_fault_label">Fault</string>
+    <string name="player_a_faults">0</string>
+    <string name="player_a_setPoint_button_label">Set Point</string>
+    <string name="player_a_ace_button_label">Ace</string>
+    <string name="player_a_fault_button_label">Fault</string>
+    <string name="player_b_label">Player B</string>
+    <string name="player_b_points">0</string>
+    <string name="player_b_ace_label">Ace</string>
+    <string name="player_b_aces">0</string>
+    <string name="player_b_fault_label">Fault</string>
+    <string name="player_b_faults">0</string>
+    <string name="player_b_setPoint_button_label">Set Point</string>
+    <string name="player_b_ace_button_label">Ace</string>
+    <string name="player_b_fault_button_label">Fault</string>
+    <string name="reset_button_label">Reset</string>
+</resources>

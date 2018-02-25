@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="player_label_padding">16dp</dimen>
+    <dimen name="player_label_textSize">14sp</dimen>
+    <dimen name="player_a_button_marginBottom">8dp</dimen>
+    <dimen name="player_a_button_marginLeft">24dp</dimen>
+    <dimen name="player_a_button_marginRight">24dp</dimen>
+    <dimen name="player_a_linearLayout_layout_width">0dp</dimen>
+    <dimen name="player_points_paddingBottom">24dp</dimen>
+    <dimen name="player_b_linearLayout_layout_width">0dp</dimen>
+    <dimen name="player_points_textSize">56sp</dimen>
+    <dimen name="player_ace_linearLayout_marginBottom">8dp</dimen>
+    <dimen name="player_ace_linearLayout_marginLeft">16dp</dimen>
+    <dimen name="player_fault_linearLayout_layout_marginBottom">16dp</dimen>
+    <dimen name="player_fault_linearLayout_layout_marginLeft">16dp</dimen>
+    <dimen name="view_verticalLine_layout_marginTop">16dp</dimen>
+    <dimen name="player_b_button_marginBottom">8dp</dimen>
+    <dimen name="player_b_button_marginLeft">24dp</dimen>
+    <dimen name="player_b_button_marginRight">24dp</dimen>
+    <dimen name="reset_button_marginBottom">32dp</dimen>
+</resources>
