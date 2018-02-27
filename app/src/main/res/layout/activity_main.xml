@@ -1,227 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#4caf50">
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
         <LinearLayout
-            android:layout_width="@dimen/player_a_linearLayout_layout_width"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="@dimen/player_label_padding"
-                android:text="@string/player_a_label"
-                android:textSize="@dimen/player_label_textSize" />
-
-            <TextView
-                android:id="@+id/player_a_points"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingBottom="@dimen/player_points_paddingBottom"
-                android:text="@string/player_a_points"
-                android:textColor="#000000"
-                android:textSize="@dimen/player_points_textSize" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4caf50"
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/player_ace_linearLayout_marginBottom"
-                android:layout_marginLeft="@dimen/player_ace_linearLayout_marginLeft"
-                android:orientation="horizontal">
+                android:layout_width="@dimen/player_a_linearLayout_layout_width"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/player_a_ace_label" />
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:padding="@dimen/player_label_padding"
+                    android:text="@string/player_a_label"
+                    android:textSize="@dimen/player_label_textSize" />
 
                 <TextView
-                    android:id="@+id/player_a_aces"
+                    android:id="@+id/player_a_points"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/player_a_aces" />
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/player_points_paddingBottom"
+                    android:text="@string/player_a_points"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/player_points_textSize" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/player_ace_linearLayout_marginBottom"
+                    android:layout_marginLeft="@dimen/player_ace_linearLayout_marginLeft"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_a_ace_label" />
+
+                    <TextView
+                        android:id="@+id/player_a_aces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_a_aces" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/player_fault_linearLayout_layout_marginBottom"
+                    android:layout_marginLeft="@dimen/player_fault_linearLayout_layout_marginLeft"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_a_fault_label" />
+
+                    <TextView
+                        android:id="@+id/player_a_faults"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_a_faults" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/player_a_button_marginBottom"
+                    android:layout_marginLeft="@dimen/player_a_button_marginLeft"
+                    android:layout_marginRight="@dimen/player_a_button_marginRight"
+                    android:onClick="addPointForPlayerA"
+                    android:text="@string/player_a_setPoint_button_label" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/player_a_button_marginBottom"
+                    android:layout_marginLeft="@dimen/player_a_button_marginLeft"
+                    android:layout_marginRight="@dimen/player_a_button_marginRight"
+                    android:onClick="addAceForPlayerA"
+                    android:text="@string/player_a_ace_button_label" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/player_a_button_marginBottom"
+                    android:layout_marginLeft="@dimen/player_a_button_marginLeft"
+                    android:layout_marginRight="@dimen/player_a_button_marginRight"
+                    android:onClick="addFaultForPlayerA"
+                    android:text="@string/player_a_fault_button_label" />
             </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:layout_marginTop="@dimen/view_verticalLine_layout_marginTop"
+                android:background="@android:color/darker_gray" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/player_b_linearLayout_layout_width"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/player_fault_linearLayout_layout_marginBottom"
-                android:layout_marginLeft="@dimen/player_fault_linearLayout_layout_marginLeft"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/player_a_fault_label" />
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:padding="@dimen/player_label_padding"
+                    android:text="@string/player_b_label"
+                    android:textSize="@dimen/player_label_textSize" />
 
                 <TextView
-                    android:id="@+id/player_a_faults"
+                    android:id="@+id/player_b_points"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/player_a_faults" />
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/player_points_paddingBottom"
+                    android:text="@string/player_b_points"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/player_points_textSize" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/player_ace_linearLayout_marginBottom"
+                    android:layout_marginLeft="@dimen/player_ace_linearLayout_marginLeft"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_b_ace_label" />
+
+                    <TextView
+                        android:id="@+id/player_b_aces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_b_aces" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/player_fault_linearLayout_layout_marginBottom"
+                    android:layout_marginLeft="@dimen/player_fault_linearLayout_layout_marginLeft"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_b_fault_label" />
+
+                    <TextView
+                        android:id="@+id/player_b_faults"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_b_faults" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/player_b_button_marginBottom"
+                    android:layout_marginLeft="@dimen/player_b_button_marginLeft"
+                    android:layout_marginRight="@dimen/player_b_button_marginRight"
+                    android:onClick="addPointForPlayerB"
+                    android:text="@string/player_b_setPoint_button_label" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/player_b_button_marginBottom"
+                    android:layout_marginLeft="@dimen/player_b_button_marginLeft"
+                    android:layout_marginRight="@dimen/player_b_button_marginRight"
+                    android:onClick="addAceForPlayerB"
+                    android:text="@string/player_b_ace_button_label" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/player_b_button_marginBottom"
+                    android:layout_marginLeft="@dimen/player_b_button_marginLeft"
+                    android:layout_marginRight="@dimen/player_b_button_marginRight"
+                    android:onClick="addFaultForPlayerB"
+                    android:text="@string/player_b_fault_button_label" />
             </LinearLayout>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/player_a_button_marginBottom"
-                android:layout_marginLeft="@dimen/player_a_button_marginLeft"
-                android:layout_marginRight="@dimen/player_a_button_marginRight"
-                android:onClick="addPointForPlayerA"
-                android:text="@string/player_a_setPoint_button_label" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/player_a_button_marginBottom"
-                android:layout_marginLeft="@dimen/player_a_button_marginLeft"
-                android:layout_marginRight="@dimen/player_a_button_marginRight"
-                android:onClick="addAceForPlayerA"
-                android:text="@string/player_a_ace_button_label" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/player_a_button_marginBottom"
-                android:layout_marginLeft="@dimen/player_a_button_marginLeft"
-                android:layout_marginRight="@dimen/player_a_button_marginRight"
-                android:onClick="addFaultForPlayerA"
-                android:text="@string/player_a_fault_button_label" />
         </LinearLayout>
 
-        <View
-            android:layout_width="1dp"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/view_verticalLine_layout_marginTop"
-            android:background="@android:color/darker_gray" />
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/reset_button_marginBottom"
+            android:onClick="resetAll"
+            android:text="@string/reset_button_label" />
+    </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="@dimen/player_b_linearLayout_layout_width"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:padding="@dimen/player_label_padding"
-                android:text="@string/player_b_label"
-                android:textSize="@dimen/player_label_textSize" />
-
-            <TextView
-                android:id="@+id/player_b_points"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:gravity="center"
-                android:paddingBottom="@dimen/player_points_paddingBottom"
-                android:text="@string/player_b_points"
-                android:textColor="#000000"
-                android:textSize="@dimen/player_points_textSize" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/player_ace_linearLayout_marginBottom"
-                android:layout_marginLeft="@dimen/player_ace_linearLayout_marginLeft"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/player_b_ace_label" />
-
-                <TextView
-                    android:id="@+id/player_b_aces"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/player_b_aces" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/player_fault_linearLayout_layout_marginBottom"
-                android:layout_marginLeft="@dimen/player_fault_linearLayout_layout_marginLeft"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/player_b_fault_label" />
-
-                <TextView
-                    android:id="@+id/player_b_faults"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/player_b_faults" />
-
-            </LinearLayout>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/player_b_button_marginBottom"
-                android:layout_marginLeft="@dimen/player_b_button_marginLeft"
-                android:layout_marginRight="@dimen/player_b_button_marginRight"
-                android:onClick="addPointForPlayerB"
-                android:text="@string/player_b_setPoint_button_label" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/player_b_button_marginBottom"
-                android:layout_marginLeft="@dimen/player_b_button_marginLeft"
-                android:layout_marginRight="@dimen/player_b_button_marginRight"
-                android:onClick="addAceForPlayerB"
-                android:text="@string/player_b_ace_button_label" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/player_b_button_marginBottom"
-                android:layout_marginLeft="@dimen/player_b_button_marginLeft"
-                android:layout_marginRight="@dimen/player_b_button_marginRight"
-                android:onClick="addFaultForPlayerB"
-                android:text="@string/player_b_fault_button_label" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/reset_button_marginBottom"
-        android:onClick="resetAll"
-        android:text="@string/reset_button_label" />
-
-</RelativeLayout>
+</ScrollView>
